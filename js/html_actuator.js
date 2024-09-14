@@ -26,6 +26,8 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
 
     if (metadata.terminated) {
       if (metadata.over) {
+        var awjofhwuiehfuiwh = new Audio('Demoman_taunts05.wav');
+        awjofhwuiehfuiwh.play();
         self.message(false); // You lose
       } else if (metadata.won) {
         self.message(true); // You win!
