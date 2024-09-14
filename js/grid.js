@@ -7,10 +7,10 @@ function Grid(size, previousState) {
 Grid.prototype.empty = function () {
   var cells = [];
 
-  for (var x = 0; x < this.size; x++) {
+  for (var x = 0; x < this.size-2; x++) {
     var row = cells[x] = [];
 
-    for (var y = 0; y < this.size; y++) {
+    for (var y = 0; y < this.size-2; y++) {
       row.push(null);
     }
   }
